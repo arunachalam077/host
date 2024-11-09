@@ -17,9 +17,9 @@ export default function Component() {
 
   // WhatsApp number (removed spaces and special characters)
   const whatsappNumber = "918524089733"  // Added your number with country code
-  const contactEmail = "techvaseegrah@gmail.com"  // Added your email
+  // const contactEmail = "techvaseegrah@gmail.com"  // Added your email
 
-  const handleChange = (e) => {
+  const handleChange = (e: { target: { id: any; value: any } }) => {
     const { id, value } = e.target
     setFormData(prevState => ({
       ...prevState,
@@ -27,7 +27,7 @@ export default function Component() {
     }))
   }
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: { preventDefault: () => void }) => {
     e.preventDefault()
     
     // Create the message text
