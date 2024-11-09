@@ -1,8 +1,8 @@
 'use client'
 import { useNavigate } from 'react-router-dom';
 import { useState, useEffect } from 'react'
-import { MessageSquare, Globe, Zap, Image as ImageIcon, Webhook, BarChart, Github, ChevronDown } from 'lucide-react'
-import { motion, useScroll, useTransform, useMotionValue, useSpring, AnimatePresence } from 'framer-motion'
+import { MessageSquare, Globe, Zap, Image as ImageIcon, Webhook, BarChart,  } from 'lucide-react'
+import { motion, useScroll, useTransform, useMotionValue, AnimatePresence } from 'framer-motion'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import {
@@ -24,11 +24,8 @@ export default function GowhatsLandingPage() {
   const { scrollYProgress } = useScroll()
   const opacity = useTransform(scrollYProgress, [0, 0.1], [1, 0])
 
-  const x = useMotionValue(0)
-  const y = useMotionValue(0)
-  const rotateX = useTransform(y, [-300, 300], [30, -30])
-  const rotateY = useTransform(x, [-300, 300], [-30, 30])
-
+  
+  
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50)
