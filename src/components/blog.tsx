@@ -54,7 +54,7 @@ export default function Blog() {
                 visible: { y: 0, opacity: 1 }
               }}
               whileHover={{ scale: 1.05 }}
-             onHoverStart={() => setHoveredId(post.id)}
+            //  onHoverStart={() => setHoveredId(post.id)}
               onHoverEnd={() => setHoveredId(null)}
               className="bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-300 ease-in-out border border-gray-200"
             >
