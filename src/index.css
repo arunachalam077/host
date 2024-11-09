@@ -2,10 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
-html {
-  scroll-behavior: smooth;
-  scroll-padding-top: 80px; /* Adjust based on your header height */
-}
+
 @layer base {
   :root {
     --background: 0 0% 100%;
